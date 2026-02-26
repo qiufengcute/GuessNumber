@@ -1,5 +1,12 @@
 # GuessNumber / 猜数字
 
+![Icon](./GuessNumberIcon.png)
+
+[![Modrinth Downloads](https://img.shields.io/modrinth/dt/guessnumber?color=00AF5C&label=Modrinth&logo=modrinth)](https://modrinth.com/mod/minewatch)
+[![GitHub License](https://img.shields.io/github/license/qiufengcute/GuessNumber?color=yellow)](LICENSE)
+[![Minecraft Version](https://img.shields.io/badge/Minecraft-1.21.8--1.21.11-00AF5C?logo=minecraft)](https://modrinth.com/discover/mods?v=1.21.8&v=1.21.9&v=1.21.10&v=1.21.11))
+[![Mod Loader](https://img.shields.io/badge/loader-Fabric-1976d2?logo=fabric)](https://modrinth.com/discover/mods?g=categories:fabric)
+
 **A simple number-guessing minigame. Guess the random number in the GUI—how many tries will it take? / 一个简单的猜数字小游戏。在GUI中猜随机数字——试试几次能猜中？**
 
 ---
