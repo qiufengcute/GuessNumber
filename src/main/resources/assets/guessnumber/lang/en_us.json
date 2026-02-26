@@ -1,0 +1,12 @@
+{
+  "gui.guessnumber.guess_number.label_cai_shu_zi": "Guess Number",
+  "gui.guessnumber.guess_number.YouNumber": "0",
+  "gui.guessnumber.guess_number.label_number": "Number:",
+  "gui.guessnumber.guess_number.button_ok": "OK",
+  "result.yes": "Correct!Please click ESC to exit",
+  "result.big": "Wrong,Big",
+  "result.small": "Wrong,Small",
+  "yes.3": "Guessed ",
+  "yes.5": "times correct!",
+  "gui.guessnumber.guess_number.YourNumber": "0"
+}

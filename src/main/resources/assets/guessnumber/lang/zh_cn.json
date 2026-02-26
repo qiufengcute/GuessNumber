@@ -1,0 +1,12 @@
+{
+  "gui.guessnumber.guess_number.label_cai_shu_zi": "猜数字",
+  "gui.guessnumber.guess_number.YouNumber": "0",
+  "gui.guessnumber.guess_number.label_number": "数字",
+  "gui.guessnumber.guess_number.button_ok": "OK",
+  "result.yes": "正确!请按 ESC 退出",
+  "result.big": "错误,大了",
+  "result.small": "错误,小了",
+  "yes.3": "猜了 ",
+  "yes.5": " 次正确!",
+  "gui.guessnumber.guess_number.YourNumber": "0"
+}

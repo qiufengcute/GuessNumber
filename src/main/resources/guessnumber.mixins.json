@@ -1,0 +1,20 @@
+{
+  "required": true,
+  "package": "net.mcreator.guessnumber.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "refmap": "guessnumber.refmap.json",
+  "mixins": [
+    "LivingEntityMixin",
+    "PlayerMixin",
+    "ItemStackMixin",
+    "BlockItemMixin",
+    "BoneMealItemMixin",
+    "CommandsMixin",
+    "ExperienceOrbMixin"
+  ],
+  "client": [],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "minVersion": "0.8.4"
+}

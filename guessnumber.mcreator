@@ -1,0 +1,216 @@
+{
+  "mod_elements": [
+    {
+      "name": "OK",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ok",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/guessnumber/procedures/OKProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "GetResult",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_result",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/guessnumber/procedures/GetResultProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "StartGuessRun",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "start_guess_run",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/guessnumber/procedures/StartGuessRunProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "StartGuess",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "start_guess",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/guessnumber/command/StartGuessCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "GuessNumber",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "guess_number",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/guessnumber/client/gui/GuessNumberScreen.java",
+          "src/main/java/net/mcreator/guessnumber/world/inventory/GuessNumberMenu.java",
+          "src/main/java/net/mcreator/guessnumber/network/GuessNumberButtonMessage.java"
+        ]
+      }
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "Anwser",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "IsOK",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
+    },
+    {
+      "name": "StatusIsBig",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
+    },
+    {
+      "name": "FirstGuess",
+      "type": "logic",
+      "scope": "map",
+      "value": "true"
+    },
+    {
+      "name": "GuessCount",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    }
+  ],
+  "sound_elements": [],
+  "tag_elements": {},
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {
+      "gui.guessnumber.guess_number.label_cai_shu_zi": "Guess Number",
+      "gui.guessnumber.guess_number.YouNumber": "0",
+      "gui.guessnumber.guess_number.label_number": "Number:",
+      "gui.guessnumber.guess_number.button_ok": "OK",
+      "result.yes": "Correct!Please click ESC to exit",
+      "result.big": "Wrong,Big",
+      "result.small": "Wrong,Small",
+      "yes.3": "Guessed ",
+      "yes.5": "times correct!",
+      "gui.guessnumber.guess_number.YourNumber": "0"
+    },
+    "zh_cn": {
+      "gui.guessnumber.guess_number.label_cai_shu_zi": "猜数字",
+      "gui.guessnumber.guess_number.YouNumber": "0",
+      "gui.guessnumber.guess_number.label_number": "数字",
+      "gui.guessnumber.guess_number.button_ok": "OK",
+      "result.yes": "正确!请按 ESC 退出",
+      "result.big": "错误,大了",
+      "result.small": "错误,小了",
+      "yes.3": "猜了 ",
+      "yes.5": " 次正确!",
+      "gui.guessnumber.guess_number.YourNumber": "0"
+    }
+  },
+  "metadata": {
+    "files": [
+      "src/main/java/net/mcreator/guessnumber/network/MenuStateUpdateMessage.java",
+      "src/main/java/net/mcreator/guessnumber/init/GuessnumberModScreens.java",
+      "src/main/java/net/mcreator/guessnumber/init/GuessnumberModMenus.java",
+      "src/main/java/net/mcreator/guessnumber/init/GuessnumberModCommands.java",
+      "src/main/java/net/mcreator/guessnumber/mixin/CommandsMixin.java",
+      "src/main/java/net/mcreator/guessnumber/event/BlockEvents.java",
+      "src/main/java/net/mcreator/guessnumber/GuessnumberModClient.java",
+      "src/main/java/net/mcreator/guessnumber/event/MiscEvents.java",
+      "src/main/java/net/mcreator/guessnumber/GuessnumberMod.java",
+      "src/main/java/net/mcreator/guessnumber/network/GuessnumberModVariables.java",
+      "src/main/java/net/mcreator/guessnumber/mixin/BoneMealItemMixin.java",
+      "src/main/resources/META-INF/guessnumber.accesswidener",
+      "src/main/java/net/mcreator/guessnumber/mixin/LivingEntityMixin.java",
+      "src/main/resources/pack.mcmeta",
+      "src/main/java/net/mcreator/guessnumber/event/ItemEvents.java",
+      "src/main/java/net/mcreator/guessnumber/event/LivingEntityEvents.java",
+      "src/main/java/net/mcreator/guessnumber/mixin/BlockItemMixin.java",
+      "src/main/java/net/mcreator/guessnumber/mixin/PlayerMixin.java",
+      "src/main/resources/guessnumber.mixins.json",
+      "src/main/java/net/mcreator/guessnumber/mixin/ExperienceOrbMixin.java",
+      "src/main/java/net/mcreator/guessnumber/mixin/ItemStackMixin.java",
+      "src/main/java/net/mcreator/guessnumber/event/PlayerEvents.java",
+      "src/main/resources/fabric.mod.json"
+    ]
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "guessnumber",
+    "modName": "GuessNumber",
+    "version": "1.0.0",
+    "description": "A simple number-guessing minigame. Guess the random number in the GUI—how many tries will it take?",
+    "author": "Qiufeng",
+    "websiteURL": "https://modrinth.com/mod/guessnumber",
+    "license": "MIT License",
+    "serverSideOnly": false,
+    "modPicture": "icon",
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "fabric-1.21.8",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.mcreator.guessnumber"
+  },
+  "mcreatorVersion": 202500345720
+}
