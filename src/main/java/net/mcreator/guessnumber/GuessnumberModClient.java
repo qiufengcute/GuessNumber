@@ -17,7 +17,7 @@ public class GuessnumberModClient implements ClientModInitializer {
 		// End of user code block mod constructor
 		GuessnumberModScreens.clientLoad();
 		GuessnumberModMenus.clientLoad();
-		ClientPlayNetworking.registerGlobalReceiver(GuessnumberModVariables.SavedDataSyncMessage.TYPE, GuessnumberModVariables.SavedDataSyncMessage::handleData);
+		ClientPlayNetworking.registerGlobalReceiver(GuessnumberModVariables.PlayerVariablesSyncMessage.TYPE, GuessnumberModVariables.PlayerVariablesSyncMessage::handleData);
 		// Start of user code block mod init
 		// End of user code block mod init
 	}

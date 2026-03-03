@@ -24,11 +24,14 @@ public class StartGuessRunProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		GuessnumberModVariables.MapVariables.get(world).GuessCount = 0;
-		GuessnumberModVariables.MapVariables.get(world).Anwser = Mth.nextInt(RandomSource.create(), 1, 100);
-		GuessnumberModVariables.MapVariables.get(world).IsOK = false;
-		GuessnumberModVariables.MapVariables.get(world).FirstGuess = true;
-		GuessnumberModVariables.MapVariables.get(world).markSyncDirty();
+		{
+			GuessnumberModVariables.PlayerVariables _vars = entity.getAttachedOrCreate(GuessnumberModVariables.PLAYER_VARIABLES);
+			_vars.GuessCount = 0;
+			_vars.Anwser = Mth.nextInt(RandomSource.create(), 1, 100);
+			_vars.IsOK = false;
+			_vars.FirstGuess = true;
+			_vars.markSyncDirty();
+		}
 		if (entity instanceof ServerPlayer _ent) {
 			BlockPos _bpos1 = BlockPos.containing(x, y, z);
 			_ent.openMenu(new MenuProvider() {

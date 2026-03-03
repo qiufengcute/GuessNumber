@@ -31,8 +31,8 @@
       "metadata": {
         "dependencies": [
           {
-            "name": "world",
-            "type": "world"
+            "name": "entity",
+            "type": "entity"
           }
         ],
         "return_type": "string",
@@ -106,31 +106,31 @@
     {
       "name": "Anwser",
       "type": "number",
-      "scope": "map",
+      "scope": "player_persistent",
       "value": "0"
     },
     {
       "name": "IsOK",
       "type": "logic",
-      "scope": "map",
+      "scope": "player_persistent",
       "value": "false"
     },
     {
       "name": "StatusIsBig",
       "type": "logic",
-      "scope": "map",
+      "scope": "player_persistent",
       "value": "false"
     },
     {
       "name": "FirstGuess",
       "type": "logic",
-      "scope": "map",
+      "scope": "player_persistent",
       "value": "true"
     },
     {
       "name": "GuessCount",
       "type": "number",
-      "scope": "map",
+      "scope": "player_persistent",
       "value": "0"
     }
   ],

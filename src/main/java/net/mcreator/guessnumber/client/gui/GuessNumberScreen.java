@@ -84,7 +84,7 @@ public class GuessNumberScreen extends AbstractContainerScreen<GuessNumberMenu> 
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
 		guiGraphics.drawString(this.font, Component.translatable("gui.guessnumber.guess_number.label_cai_shu_zi"), 57, 13, -12829636, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.guessnumber.guess_number.label_number"), 68, 30, -12829636, false);
-		guiGraphics.drawString(this.font, GetResultProcedure.execute(world), 7, 94, -12829636, false);
+		guiGraphics.drawString(this.font, GetResultProcedure.execute(entity), 7, 94, -12829636, false);
 	}
 
 	@Override
